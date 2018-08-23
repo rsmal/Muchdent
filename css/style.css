@@ -1,0 +1,294 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+#toggle {
+  display: none;
+}
+
+.intro {
+  background-image: url("../images/Tło.jpg");
+  height: 100vh;
+  background-position: center;
+  width: 100%;
+}
+
+.intro__info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  border-bottom: solid 1px #692323;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding-right: 150px;
+}
+
+.intro__logo {
+  padding-right: 170px;
+}
+
+.intro__item {
+  padding: 20px;
+}
+
+.intro__social {
+  padding: 10px;
+}
+
+.fas {
+  padding-right: 5px;
+}
+
+.fas:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.fab {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.fab:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.nav {
+  color: white;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list {
+  display: flex;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.nav__item {
+  padding: 15px 10px;
+}
+
+.nav__link:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.fixed___flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fixed {
+  position: fixed;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  /*left: 50%;
+    transform: translate(-50%) !important;*/
+  width: calc(100% - 30px);
+  top: 0;
+  color: black;
+  z-index: 3;
+  animation: navbar 0.3s forwards 0s ease-out;
+}
+
+@keyframes navbar {
+  0% {
+    transform: rotate(0) scale(0) translateY(-600px);
+  }
+  100% {
+    transform: rotate(0) scale(1) translateY(0);
+  }
+}
+
+.slogan {
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.slogan__title {
+  font-size: 40px;
+  opacity: 0.7;
+}
+
+.slogan__subtitle {
+  font-size: 40px;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.slogan__link {
+  padding: 10px 20px;
+  border: 2px solid red;
+  background-color: red;
+}
+
+.slogan__link:hover {
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+}
+
+.container__about {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+.aboutme {
+  color: white;
+}
+
+.aboutme__title {
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+}
+
+.aboutme__title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border-bottom: solid 3px red;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120%;
+}
+
+.aboutme__span {
+  padding-left: 20px;
+}
+
+.aboutme__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aboutme__card {
+  padding: 100px;
+}
+
+.aboutme__subtitle {
+  padding: 70px;
+  text-align: center;
+}
+
+.aboutme__description {
+  max-width: 600px;
+}
+
+.services {
+  background-image: url("../images/servicces__bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.services__title {
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+  color: black;
+}
+
+.services__title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border-bottom: solid 3px black;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120%;
+}
+
+.services__icon {
+  font-size: 50px;
+  padding: 100px 200px 50px;
+}
+
+.services__icon:hover {
+  color: white;
+}
+
+.services__content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.services__card {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services__subtitle {
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+
+.services__link {
+  position: absolute;
+  text-transform: uppercase;
+  border: 2px solid red;
+  background-color: red;
+  padding: 20px 35px;
+  left: 27%;
+  top: 90%;
+}
+
+.services__link:hover {
+  border: 2px solid #fff;
+  color: red;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

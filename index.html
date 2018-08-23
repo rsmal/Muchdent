@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="intro" id="intro">
+        <div class="intro__info ">
+            <ul class="intro__list">
+                <li class="intro__item ">
+                    <i class=" fas fa-phone"></i>
+                    +48 530 600 060
+                </li>
+                
+                <li class="intro__item">
+                    <i class="fas fa-envelope"></i>
+                    kontakt@mucha.com
+                </li>
+            </ul>
+                <div class="intro__social">
+                    <div class="intro__icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+        </div>
+
+       
+
+        <nav class="nav " id="1">        
+            <a href="#" id="toggle"><i class="fas fa-bars hamicon"></i></a> 
+            <div class="nav__wrapper nav__list" id="sticky" > 
+            <a class="nav__logo"  href="index.html"><img  src="https://via.placeholder.com/150x60" alt="logo" class="intro__logo"></a>
+            
+            <ul class="nav__list" id="rwd" >    
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">O mnie</a></li>
+                <li class="nav__item"><a class="nav__link" href="#oferta">Usługi</a></li>
+                <li class="nav__item"><a class="nav__link" href="#footer">Kontakt</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="slogan nav__list">
+            
+            <a class="slogan__link " href="#oferta">Zobacz ofertę</a>
+        </div>   
+    </section>
+
+    <section class="aboutme" id="about">
+        <h1 class="aboutme__title ">O <span class="aboutme__span">mnie</span> </h1>
+        <div class="aboutme__content container__about">
+            <div class="aboutme__card">
+                <img src="images/mako.jpeg" alt="">
+            </div>
+
+            <div class="aboutme__card">
+                <h2 class="aboutme__subtitle"> Grzegorz Mucha </h1>
+                    <p class="aboutme__description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+
+
+        </div>
+
+    </section> 
+
+
+<section class="services">
+    <h2 class="services__title">Usługi</h2>
+    
+    <div class="services__content">
+        <div class="services__card">
+            
+                <i class="services__icon fas fa-prescription-bottle"></i></i>
+                <h3 class="services__subtitle"> Implantologia</h3>
+                <a href="" class="services__link">Zobacz Cennik</a>
+        </div>
+
+        <div class="services__card">
+                <i class=" services__icon fas fa-tooth"></i>
+                <h3 class="services__subtitle"> chirurgia</h3>
+                <a href="" class="services__link">Zobacz Cennik</a>
+        </div>
+
+        <div class="services__card">
+                <i class="services__icon fas fa-teeth-open"></i>
+                <h3 class="services__subtitle"> protetyka</h3>
+                <a href="" class="services__link">Zobacz Cennik</a>
+        </div>
+    
+    
+    </div>      
+    
+
+
+</section>
+
+
+
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+<section>ssssssss</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    let navbar = document.getElementById("sticky");
+    let sticky = navbar.offsetTop;
+
+    function myFunction() {
+
+        if (window.pageYOffset >= sticky){
+            navbar.classList.add("fixed")
+            navbar.classList.add("fixed___flex")
+        }else {
+            navbar.classList.remove("fixed");
+            navbar.classList.remove("fixed___flex");
+        }
+    }
+
+</script>
+
+<script>
+    
+        $( '.nav__list a ' ).on( 'click', function(e){
+            
+            let href = $(this).attr( 'href' );
+            $( 'html, body' ).animate({
+                  scrollTop: $( href ).offset().top - 300
+            }, '300' );
+            e.preventDefault();
+          });
+        </script>
+
+</body>
+</html>
